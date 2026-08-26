@@ -1,7 +1,7 @@
-import { StyleSheet, Text, View } from 'react-native';
-import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { StyleSheet } from 'react-native';
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+import { useFonts } from 'expo-font';
 import { HomeScreen } from './src/screens/Home/HomeScreen';
-import { useFonts } from 'expo-font'
 
 export default function App() {
 

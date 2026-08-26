@@ -1,15 +1,13 @@
 import { Pressable, Text, StyleSheet } from 'react-native';
-import type { ReactNode } from 'react';
 import { theme } from '../styles/theme';
 
 interface CategoryButtonProps {
     text: string;
-    icon?: ReactNode;
     selected?: boolean;
     onPress?: () => void;
 }
 
-export function CategoryButton({ text, icon, selected = false, onPress }: CategoryButtonProps) {
+export function CategoryButton({ text, selected = false, onPress }: CategoryButtonProps) {
     return (
         <Pressable
             accessibilityRole="button"
@@ -17,7 +15,6 @@ export function CategoryButton({ text, icon, selected = false, onPress }: Catego
             onPress={onPress}
             style={[styles.categoryButton, selected && styles.selectedCategoryButton]}
         >
-            {icon}
             <Text style={[styles.categoryText, selected && styles.selectedCategoryText]}>{text}</Text>
         </Pressable>
     );

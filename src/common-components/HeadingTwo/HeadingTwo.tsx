@@ -15,6 +15,6 @@ const styles = StyleSheet.create({
     h2: {
         color: theme.colors.secondary,
         fontSize: 16,
-        fontFamily: 'Inter_700'
+        fontFamily: 'Inter_600'
     }
 })
