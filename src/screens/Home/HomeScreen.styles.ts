@@ -83,6 +83,8 @@ export const styles = StyleSheet.create({
 
     gridTop: {
         marginBottom: 12,
+        marginTop: 12,
+
     },
 
     seeMoreButton: {

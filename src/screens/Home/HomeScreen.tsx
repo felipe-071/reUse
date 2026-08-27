@@ -80,7 +80,7 @@ export function HomeScreen() {
 
                 </View>
 
-        <SearchBar />
+                <SearchBar />
         
                 <ScrollView
                     horizontal
@@ -124,7 +124,6 @@ export function HomeScreen() {
                     </Pressable>
                 </View>
 
-                    
                 <FlatList
                     data={produtos}
                     numColumns={2}
@@ -136,7 +135,9 @@ export function HomeScreen() {
                         </View>
                     )}
                 />
+                
             </ScrollView>
+            
 
             <MainMenu />
 
