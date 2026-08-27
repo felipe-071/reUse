@@ -1,5 +1,6 @@
-import { Pressable, StyleSheet, Text, View } from "react-native"
-import { theme } from "../../styles/theme"
+import { Pressable, Text, View } from "react-native"
+import { globalStyles } from "../../styles/global"
+import { styles } from './TabBarButton.styles'
 
 
 interface TabBarButtonProps {
@@ -14,43 +15,10 @@ export default function TabBarButton({ description, children, current }: TabBarB
             <View style={[styles.iconPadding, current && styles.currentBg]}>
                 {children}
             </View>
-            <Text style={[styles.text, current && styles.current]}>
+            <Text style={[styles.text, globalStyles.bodyFont, current && styles.current]}>
                 {description}
             </Text>
         </Pressable>
     )
 }
 
-const styles = StyleSheet.create({
-    button: {
-        backgroundColor: 'transparent',
-        borderWidth: 0,
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        fontFamily: 'Inter_400',
-        fontSize: 12,
-        color: theme.colors.text3,
-        width: 50
-    },
-
-    text: {
-        color: theme.colors.text3,
-    },
-
-    current: {
-        color: theme.colors.primary,
-        fontFamily: 'Inter_500'
-    },
-
-    iconPadding: {
-        padding: 5,
-        borderRadius: 50
-
-    },
-
-    currentBg: {
-        backgroundColor: '#4b70423d',
-    }
-})

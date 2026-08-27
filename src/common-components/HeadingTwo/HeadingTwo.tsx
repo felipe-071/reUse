@@ -1,5 +1,5 @@
-import { StyleSheet, Text } from "react-native";
-import { theme } from '../../styles/theme'
+import { Text } from "react-native";
+import { styles } from './HeadingTwo.styles'
 
 interface HeadingTwoProps{
     content: string
@@ -11,10 +11,3 @@ export default function HeadingTwo({content}: HeadingTwoProps){
     )
 }
 
-const styles = StyleSheet.create({
-    h2: {
-        color: theme.colors.secondary,
-        fontSize: 16,
-        fontFamily: 'Inter_600'
-    }
-})

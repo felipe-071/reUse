@@ -1,11 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { View } from "react-native";
 import { theme } from '../../styles/theme'
 import { Home, Search, MessageCircle, User, Plus } from 'lucide-react-native'
 import TabBarButton from "../../common-components/TabBarButton/TabBarButton";
+import { globalStyles } from "../../styles/global";
+import { styles } from './NavigationBar.styles'
 
 export default function MainMenu() {
     return (
-        <View style={styles.mainMenu}>
+        <View style={[styles.mainMenu, globalStyles.defaultShadow]}>
             <TabBarButton description="Início" current>
                 <Home size={20} color={theme.colors.primary}/>
             </TabBarButton>
@@ -28,25 +30,3 @@ export default function MainMenu() {
     )
 }
 
-const styles = StyleSheet.create({
-    mainMenu: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        backgroundColor: theme.colors.background,
-        position: 'absolute',
-        bottom: 0,
-        left: 0,
-        right: 0,
-        paddingHorizontal: 16,
-        paddingVertical: 4,  
-        borderTopColor: 'blue'
-    },
-
-    mainButton:{
-        backgroundColor: theme.colors.secondary,
-        padding: 10,
-        borderRadius: 50,
-        transform: [{translateY: '-50%'}],
-        color: '#FFF'
-    },
-})

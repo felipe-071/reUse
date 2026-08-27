@@ -1,5 +1,5 @@
-import { StyleSheet, Text } from "react-native";
-import { theme } from '../../styles/theme'
+import { Text } from "react-native";
+import { styles } from './ContentText.styles'
 
 interface ContentTextProps{
     content: string
@@ -7,12 +7,7 @@ interface ContentTextProps{
 
 export default function ContentText({content} : ContentTextProps){
     return(
-        <Text>{content}</Text>
+        <Text style={styles.text}>{content}</Text>
     )
 }
 
-const styles = StyleSheet.create({
-    text: {
-        color: theme.colors.text1
-    }
-})
