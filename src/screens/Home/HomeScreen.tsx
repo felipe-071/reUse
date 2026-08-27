@@ -48,9 +48,12 @@ export function HomeScreen() {
 
                 <View style={styles.alignmentViews}>
                     <View>
-                        <Text style={styles.title}>
-                            Re<Text style={styles.highlightTitle}>Use</Text>
-                        </Text>
+                        <View>
+                            <Text style={styles.title}>
+                                Re<Text style={styles.highlightTitle}>Use</Text>
+                            </Text>
+                            
+                        </View>
                         <View>
                             <Text style={globalStyles.bodyFont}>
                                 Boa tarde, Felipe 👋
@@ -95,6 +98,25 @@ export function HomeScreen() {
 
                 <View style={[styles.alignmentViews, styles.gridTop]}>
                     <HeadingTwo content="Perto de você" />
+                    <Pressable style={styles.seeMoreButton}>
+                        <Text style={styles.seeMoreButtonText}>Ver todos </Text><ChevronRight size={16} />
+                    </Pressable>
+                </View>
+
+                <FlatList
+                    data={produtos}
+                    numColumns={2}
+                    columnWrapperStyle={styles.cardRow}
+                    keyExtractor={(item) => item.id}
+                    renderItem={({ item }) => (
+                        <View style={styles.cardItem}>
+                            <Card title={item.title} image={item.image} distance={item.distance} />
+                        </View>
+                    )}
+                />
+
+                <View style={[styles.alignmentViews, styles.gridTop]}>
+                    <HeadingTwo content="Adicionados recentemente" />
                     <Pressable style={styles.seeMoreButton}>
                         <Text style={styles.seeMoreButtonText}>Ver todos </Text><ChevronRight size={16} />
                     </Pressable>

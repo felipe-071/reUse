@@ -55,6 +55,8 @@ export const styles = StyleSheet.create({
     notificationsButton: {
         justifyContent: 'center',
         alignItems: 'center',
+        alignSelf: 'flex-start',
+        marginTop: 14,
         height: 36,
         width: 36,
         borderRadius: '100%',
