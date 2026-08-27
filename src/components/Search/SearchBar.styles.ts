@@ -27,6 +27,7 @@ export const styles = StyleSheet.create({
         borderColor: theme.colors.border,
         borderRadius: 12,
         fontSize: 14,
+        fontFamily: 'Inter_400'
     },
 
     filterButton: {

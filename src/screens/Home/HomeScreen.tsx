@@ -6,7 +6,6 @@ import {
 } from 'lucide-react-native'
 
 import { globalStyles } from '../../styles/global'
-
 import { CategoryButton } from '../../common-components/CategoryButton';
 // import ContentText from '../../common-components/ContentText/ContentText'
 import HeadingTwo from '../../common-components/HeadingTwo/HeadingTwo';
@@ -16,6 +15,7 @@ import { useState } from 'react';
 import Card from '../../components/Card/Card';
 import MainMenu from '../../components/NavigationBar/NavigationBar';
 import { styles } from './HomeScreen.styles'
+import SearchBar from '../../components/Search/SearchBar';
 
 
 
@@ -80,6 +80,8 @@ export function HomeScreen() {
 
                 </View>
 
+        <SearchBar />
+        
                 <ScrollView
                     horizontal
                     showsHorizontalScrollIndicator={false}

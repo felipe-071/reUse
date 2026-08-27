@@ -1,6 +1,6 @@
 import { Search, Settings2 } from "lucide-react-native";
 import { Pressable, TextInput, View } from "react-native";
-import { styles } from './Search.styles'
+import { styles } from './SearchBar.styles'
 import { globalStyles } from '../../styles/global'
 
 export default function SearchBar() {
@@ -9,7 +9,7 @@ export default function SearchBar() {
             <Search size={16} style={styles.searchIcon} />
             <TextInput
                 placeholder="Buscar itens para trocar..."
-                style={[styles.searchInput, globalStyles.bodyFont, globalStyles.defaultShadow]}
+                style={[styles.searchInput, globalStyles.defaultShadow]}
             />
             <Pressable style={[styles.filterButton, globalStyles.defaultShadow]}>
                 <Settings2 />
