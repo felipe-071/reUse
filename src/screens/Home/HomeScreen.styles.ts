@@ -72,17 +72,17 @@ export const styles = StyleSheet.create({
     },
 
     categoriesScrollView: {
-        flexGrow: 0
+        flexGrow: 0,
+        paddingTop: 20,
+        paddingBottom: 12
     },
 
     categories: {
         gap: 8,
-        paddingVertical: 8
     },
 
     gridTop: {
         marginBottom: 12,
-        marginTop: 20
     },
 
     seeMoreButton: {
