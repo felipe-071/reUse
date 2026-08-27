@@ -102,6 +102,7 @@ export const styles = StyleSheet.create({
     cardItem: {
         flex: 1,
     },
+    
 
     cardRow: {
         gap: 12,

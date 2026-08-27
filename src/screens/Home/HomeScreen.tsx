@@ -122,6 +122,7 @@ export function HomeScreen() {
                     </Pressable>
                 </View>
 
+                    
                 <FlatList
                     data={produtos}
                     numColumns={2}
