@@ -1,9 +1,9 @@
-import { View } from "react-native";
-import { theme } from '../../styles/theme'
+import { globalStyles } from "../../styles/global";
 import { Home, Search, MessageCircle, User, Plus } from 'lucide-react-native'
 import TabBarButton from "../../common-components/TabBarButton/TabBarButton";
-import { globalStyles } from "../../styles/global";
+import { theme } from '../../styles/theme'
 import { styles } from './NavigationBar.styles'
+import { View } from "react-native";
 
 export default function MainMenu() {
     return (

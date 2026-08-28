@@ -1,7 +1,7 @@
-import { Search, Settings2 } from "lucide-react-native";
-import { Pressable, TextInput, View } from "react-native";
 import { styles } from './SearchBar.styles'
 import { globalStyles } from '../../styles/global'
+import { Search, Settings2 } from "lucide-react-native";
+import { Pressable, TextInput, View } from "react-native";
 
 export default function SearchBar() {
     return (

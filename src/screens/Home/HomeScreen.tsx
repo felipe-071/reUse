@@ -1,20 +1,17 @@
 import {
     Bell,
     ChevronRight,
-    Leaf,
     MapPin,
 } from 'lucide-react-native'
-
-import { globalStyles } from '../../styles/global'
-import { CategoryButton } from '../../common-components/CategoryButton';
-// import ContentText from '../../common-components/ContentText/ContentText'
-import HeadingTwo from '../../common-components/HeadingTwo/HeadingTwo';
-import { StatusBar } from 'expo-status-bar';
-import { FlatList, Pressable, ScrollView, Text, View } from 'react-native';
-import { useState } from 'react';
-import Card from '../../components/Card/Card';
-import MainMenu from '../../components/NavigationBar/NavigationBar';
 import { styles } from './HomeScreen.styles'
+
+import Card from '../../components/Card/Card';
+import { CategoryButton } from '../../common-components/CategoryButton/CategoryButton';
+import { FlatList, Pressable, ScrollView, Text, View } from 'react-native';
+import { globalStyles } from '../../styles/global'
+import HeadingTwo from '../../common-components/HeadingTwo/HeadingTwo';
+import MainMenu from '../../components/NavigationBar/NavigationBar';
+import { useState } from 'react';
 import SearchBar from '../../components/Search/SearchBar';
 
 
