@@ -30,16 +30,15 @@ O desenvolvimento do projeto foi organizado em sprints, permitindo evoluir a apl
 
 A interface do aplicativo foi projetada nos seguintes pilares fundamentais:
 
-* **Personalidade Emocional:** Identidade visual planejada para transmitir uma atmosfera moderna, amigável, acolhedora e com foco total em sustentabilidade.
-* **Hierarquia Visual:** Elementos estruturados de forma coesa, garantindo que as informações de maior relevância (como estado do produto e distância) ganhem destaque.
-* **Arquitetura da Home:** Tela inicial equipada com sistema de filtragem dinâmica, seções que segmentam o conteúdo por comportamento do usuário e menu inferior otimizado para o alcance dos dedos.
+* **Personalidade:** Identidade visual planejada para transmitir um caráter moderno, amigável, acolhedor e com foco total em sustentabilidade.
+* **Hierarquia Visual:** Elementos estruturados de forma coesa e orientados ao comportamento do usuário.
+* **Arquitetura da Home:** Tela inicial equipada com sistema de filtragem dinâmica, seções que segmentam o conteúdo estrategicamente e menu inferior otimizado para o alcance dos dedos.
 
 ---
 
 ## 🛠️ Estrutura do Projeto
 
-Abaixo está a arquitetura enxuta do diretório `/src`, omitindo arquivos de configuração padrão do Expo para destacar o código proprietário da aplicação:
-
+Estruturação das pastas, considerando os arquivos mais relevantes:
 ```text
 ├── assets/
 │   ├── fonts/
