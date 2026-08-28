@@ -14,13 +14,13 @@
 
 ## 🚀 Sprints de Desenvolvimento
 
-O desenvolvimento do projeto foi organizado em sprints estratégicas, permitindo evoluir a aplicação de forma incremental e validar as principais funcionalidades continuamente.
+O desenvolvimento do projeto foi organizado em sprints, permitindo evoluir a aplicação de forma incremental e validar as principais funcionalidades continuamente.
 
 ### 📍 Sprint 01 — Fundação
-**Objetivo:** Estruturar a base do projeto e consolidar sua proposta de valor.
+**Objetivo:** Estruturar a base do projeto e demonstrar sua proposta.
 
 - [x] **Apresentação do Produto:** Definição e validação das principais funcionalidades.
-- [x] **Componentização:** Criação de componentes reutilizáveis focando em escalabilidade e manutenção.
+- [x] **Componentização:** Criação de componentes reutilizáveis para aprimorar escalablidade e manutenção.
 - [x] **UI/UX:** Definição da arquitetura de informação e consolidação da identidade visual.
 - [x] **MVP da Home:** Estruturação completa e estilização da tela inicial.
 
