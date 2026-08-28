@@ -38,7 +38,7 @@ A interface do aplicativo foi projetada nos seguintes pilares fundamentais:
 
 ## 🛠️ Estrutura do Projeto
 
-Estruturação das pastas, considerando os arquivos mais relevantes:
+Estruturação das pastas, considerando os arquivos e pastas mais relevantes:
 ```text
 ├── assets/
 │   ├── fonts/
